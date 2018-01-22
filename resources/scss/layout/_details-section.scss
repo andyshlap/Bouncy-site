@@ -1,0 +1,36 @@
+
+.details-section {
+  background-color: $almost-white-color;
+}
+
+.details-section__icons-wrapper {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.details-section__icon {
+  font-size: 200%;
+  height: 55px;
+  margin-left: 30px;
+  padding-top: 15px;
+  width: 70px;
+}
+
+.pe-7s-like {
+  background-color: $green-color;
+  margin-left: 0;
+}
+
+.details-section__h4 {margin-bottom: 30px;}
+
+.details-section__text {letter-spacing: 1px;}
+
+.details-section__col1 {
+  float: left;
+  width: 35%;
+}
+
+.details-section__col2 {
+  float: right;
+  width: 60%;
+}

@@ -1,0 +1,37 @@
+
+.testimonials-section {
+  background-color: $almost-white-color;
+}
+
+.slide__col {
+  float: left;
+}
+
+.slide__col1 {
+  margin-right: 5%;
+  width: 20%;
+
+	.slide__face-img {
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+	}
+}
+
+.slide__col2 {
+  width: 70%;
+}
+
+.slide__text {margin-bottom: 30px;}
+
+.slide__text__author {
+  font-family: $text-font;
+  margin-bottom: 10px;
+}
+
+.slide__text__whois {
+  color: $light-grey-color;
+  font-family: $text-font;
+  font-size: 70%;
+}
+

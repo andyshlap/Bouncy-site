@@ -1,0 +1,50 @@
+
+ .map-section {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  background-image: url('../images/map-section.jpg');
+ }
+
+.map-section__bg-dark {
+  background-color: transparent;
+  height: 210px;
+  padding-top: 190px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.map-section__bg-dark:hover {
+  background-color: rgba(0,0,0, .85);
+}
+
+.map-section__text {
+  color: transparent;
+  display: inline-block;
+  font-family: $text-font;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.map-section__bg-dark:hover {
+	.map-section__text {color: white;}
+
+	.map-section__icon {
+  background-color: $green-color;
+  color: white;
+	}
+}
+
+.map-section__icon {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: transparent;
+  font-size: 75%;
+  height: 25px;
+  margin-left: 10px;
+  padding-top: 5px;
+  width: 25px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}

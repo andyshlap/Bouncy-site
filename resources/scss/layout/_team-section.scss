@@ -1,0 +1,93 @@
+
+.team-section__h3__follower {margin-bottom: 10px;}
+
+.member__content {
+  float: right;
+  width: 50%;
+}
+
+.member__photo {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 230px;
+}
+
+.member__whois {
+  border-right: 4px solid $green-color;
+  display: inline-block;
+  float: right;
+  margin-top: 25px;
+  padding-right: 10px;
+
+	.member__name-h4 {
+    margin-bottom: 5px;
+    text-align: right;
+	}
+
+	.member__position {
+    font-style: italic;
+    text-transform: uppercase;
+	}
+}
+
+.member__quote {
+  display: block;
+  float: right;
+  font-size: 70%;
+  margin-right: 10px;
+  margin-top: 40px;
+  text-align: right;
+  width: 350px;
+	
+}
+
+.member__skills {
+  margin-right: 10px;
+
+	.skill__wrapper {
+    border-bottom: 4px solid #e1e4e9;
+    float: right;
+    margin-top: 30px;
+    width: 330px;
+
+		.skill__percent {float: right;}
+
+		.skill__bar {
+      border-bottom: 4px solid $green-color;
+      height: 10px;
+      margin-bottom: -4px;
+		}
+
+		.skill__bar-80 {width: 264px;}
+
+		.skill__bar-65 {width: 214px;}
+
+		.skill__bar-75 {width: 247px;}
+	}
+}
+
+.team-section__footer {
+  background-image: url('../images/team__footer-bg.png');
+  padding: 30px 0;
+  text-align: center;
+ }
+
+.team-section__footer__text {
+  color: white;
+  font-size: 100%;
+}
+
+.team-section__footer__button {
+  border-color: white;
+  color: white;
+  margin-top: 30px;
+  padding: 10px 30px;
+}
+
+.team-section__footer__button:hover {
+  background-color: white;
+  color: $green-color;
+}
+

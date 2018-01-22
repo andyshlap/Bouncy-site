@@ -1,5 +1,26 @@
 
-.section {padding: 80px 7%;}
+.section {
+	padding: 80px 7%;
+
+  &__heading {
+    color: $dark-grey-color;
+    font-family: $headers-font;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &__follower {
+      font-family: $text-font;
+      font-size: 70%;
+      letter-spacing: 1px;
+      line-height: 25px;
+      margin: 0 auto 60px;
+      text-align: center;
+      width: 500px;
+    }
+	}
+}
 
 .section:focus {outline: none;}
 
@@ -7,25 +28,6 @@
   color: $light-grey-color;
   font-family: $text-font;
   font-size: 70%;
-}
-
-.section__heading {
-  color: $dark-grey-color;
-  font-family: $headers-font;
-  letter-spacing: 8px;
-  margin-bottom: 40px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.section__heading__follower {
-  font-family: $text-font;
-  font-size: 70%;
-  letter-spacing: 1px;
-  line-height: 25px;
-  margin: 0 auto 60px;
-  text-align: center;
-  width: 500px;
 }
 
 .h4 {
@@ -60,6 +62,8 @@
   -webkit-transition: .5s;
   transition: .5s;
 }
+
+.logo:hover {color: $green-color;}
 
 .icon {
   background-color: $light-grey-color;

@@ -13,16 +13,16 @@
   outline: none;
   padding-left: 10px;
   width: 30%;
+
+  &__text {
+    height: 190px;
+    margin-top: 30px;
+    outline: none;
+    width: 100%;
+  }
 }
 
 .form:first-child {margin-left: 0;}
-
-.form__text {
-  height: 190px;
-  margin-top: 30px;
-  outline: none;
-  width: 100%;
-}
 
 .contact-forms-section__button {
   -webkit-box-sizing: border-box;

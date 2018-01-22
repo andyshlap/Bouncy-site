@@ -1,10 +1,56 @@
 
 .projects-section {padding: 80px 0 0 ;}
 
-.projects__col {
-  background-size: cover;
-  float: left;
-  text-align: center;
+.projects{
+  &__col {
+    background-size: cover;
+    float: left;
+    text-align: center;
+  }
+
+  &__col:hover .img__bg-dark {background-color: rgba(0,0,0, .8);}
+
+  &__col:hover .col__header {color: white;}
+
+  &__col1 {
+    background-image: url('../images/works-col1.png');
+  }
+
+  &__col2 {
+    background-image: url('../images/works-col2.png');
+  }
+
+  &__col3 {
+    background-image: url('../images/works-col3.png');
+  }
+
+  &__footer {
+    background-image: url('../images/works__footer.png');
+    background-position: center;
+    background-size: cover;
+    clear: both;
+    height: 115px;
+    padding: 0 160px;
+  }
+
+  &__text {
+    color: white;
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  &__button {
+    border-color: white;
+    color: white;
+    float: right;
+    margin-top: 35px;
+  }
+
+  &__button:hover {
+    background-color: rgba(255, 255, 255, .8);
+    border: 1px white dotted;
+    color: $green-color;
+  }
 }
 
 .col-2-of-4 {width: 50%;}
@@ -17,8 +63,6 @@
   transition: .5s;
 }
 
-.projects__col:hover .img__bg-dark {background-color: rgba(0,0,0, .8);}
-
 .col__header {
   color: transparent;
   display: block;
@@ -29,48 +73,6 @@
   text-transform: uppercase;
   -webkit-transition: .5s;
   transition: .5s;
-}
-
-.projects__col:hover .col__header {color: white;}
-
-.projects__col1 {
-  background-image: url('../images/works-col1.png');
-}
-
-.projects__col2 {
-  background-image: url('../images/works-col2.png');
-}
-
-.projects__col3 {
-  background-image: url('../images/works-col3.png');
-}
-
-.projects__footer {
-  background-image: url('../images/works__footer.png');
-  background-position: center;
-  background-size: cover;
-  clear: both;
-  height: 115px;
-  padding: 0 160px;
-}
-
-.projects__text {
-  color: white;
-  display: inline-block;
-  margin-top: 50px;
-}
-
-.projects__button {
-  border-color: white;
-  color: white;
-  float: right;
-  margin-top: 35px;
-}
-
-.projects__button:hover {
-  background-color: rgba(255, 255, 255, .8);
-  border: 1px white dotted;
-  color: $green-color;
 }
 
 @media only screen and (max-width: 1023px) {

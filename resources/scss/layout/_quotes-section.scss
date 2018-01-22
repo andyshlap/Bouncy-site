@@ -3,41 +3,37 @@
   background-image: url('../images/quotes__bg.png');
   background-position: center;
   background-size: cover;
+
+  &__col {
+    float: left;
+  }
+
+  &__col1 {
+    width: 60%;
+  }
+
+  &__heading {
+    color: white;
+    text-align: initial;
+  }
+
+  &__content {margin-bottom: 30px;}
+
+  &__content-author {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__author-whois {text-transform: uppercase;}
+
+  &__col2 {width: 40%;}
+  
+  &__img {
+    float: right;
+    margin-top: -110px;
+    width: 100%;
+  }
 }
-
-.quotes-section__col {
-  float: left;
-}
-
-.quotes-section__col1 {
-  width: 60%;
-}
-
-.quotes-section__heading {
-  color: white;
-  text-align: initial;
-}
-
-.quotes-section__content {margin-bottom: 30px;}
-
-.quotes-section__content-author {
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.quotes-section__author-whois {text-transform: uppercase;}
-
-
-.quotes-section__col2 {
-  width: 40%;
-}
-
-.quotes-section__img {
-  float: right;
-  margin-top: -110px;
-  width: 100%;
-}
-
 
 @media only screen and (max-width: 1023px) {
   .quotes-section .quotes-section__col2 .quotes-section__img {

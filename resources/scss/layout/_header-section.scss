@@ -10,74 +10,78 @@
   height: 100vh;
   padding: 50px 7%;
   position: relative;
+
+  &__logo {
+    color: white;
+    display: inline-block;
+  }
+
+  &__nav {
+    float: right;
+  }
+
+  &__h2 {
+    display: block;
+    font-family: $headers-font;
+    font-size: 180%;
+    font-weight: 100;
+    left: 50%;
+    letter-spacing: 10px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 40%;
+     -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  &__scroll {
+    background-color: $green-color;
+    border-radius: 50%;
+    bottom: 1%;
+    color: white;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 40px;
+  }
 }
 
-.header__logo {
-  color: white;
-  display: inline-block;
+.nav {
+  &__item {
+    -webkit-transition: 0.7s;
+    border-radius: 20px;
+    border: 1px transparent solid;
+    color: white;
+    display: inline-block;
+    font-family: $text-font;
+    font-size: 80%;
+    padding: 7px 10px;
+    text-decoration: none;
+    transition: .7s;
+  }
+
+  &__item:hover {
+     border-color: $green-color;
+    color: $green-color;
+  }
 }
 
-.logo:hover {color: $green-color; }
-
-.header__nav {float: right;}
-
-.nav__item {
-  -webkit-transition: 0.7s;
-  border-radius: 20px;
-  border: 1px transparent solid;
-  color: white;
-  display: inline-block;
-  font-family: $text-font;
-  font-size: 80%;
-  padding: 7px 10px;
-  text-decoration: none;
-  transition: .7s;
-}
-
-.nav__item:hover {
-  border-color: $green-color;
-  color: $green-color;
-}
-
-.header__h2{
-  display: block;
-  font-family: $headers-font;
-  font-size: 180%;
-  font-weight: 100;
-  left: 50%;
-  letter-spacing: 10px;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  top: 40%;
-   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.h2__follower {
-  display: block;
-  font-family: $text-font;
-  font-size: 80%;
-  left: 50%;
-  line-height: 28px;
-  position: absolute;
-  text-align: center;
-  top: 55%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.header__scroll {
-  background-color: $green-color;
-  border-radius: 50%;
-  bottom: 1%;
-  color: white;
-  height: 40px;
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 40px;
+.h2 {
+  &__follower {
+    display: block;
+    font-family: $text-font;
+    font-size: 80%;
+    left: 50%;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
 
 .scroll__icon {font-size: 40px;}

@@ -4,39 +4,41 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-}
 
-.subscribe-section__heading {color: white;}
+  &__heading {
+    color: white;
 
-.subscribe-section__heading__follower {color: $light-grey-color;}
+    &__follower {color: $light-grey-color;}
+  }
 
-.subscribe-section__email-field {
-  background-color: transparent;
-  border: 1px solid $light-grey-color;
-  color: white;
-  font-family: $text-font;
-  outline: none;
-  padding: 10px 20px;
-  width: 320px;
-}
+  &__email-field {
+    background-color: transparent;
+    border: 1px solid $light-grey-color;
+    color: white;
+    font-family: $text-font;
+    outline: none;
+    padding: 10px 20px;
+    width: 320px;
+  }
 
-.subscribe-section__button-submit {
-  background-color: $green-color;
-  border: 1px solid transparent;
-  color:  white;
-  font-family: $text-font;
-  margin-left: 10px;
-  outline: none;
-  padding: 10px 50px;
-  text-transform: uppercase;
-}
+  &__button-submit {
+    background-color: $green-color;
+    border: 1px solid transparent;
+    color:  white;
+    font-family: $text-font;
+    margin-left: 10px;
+    outline: none;
+    padding: 10px 50px;
+    text-transform: uppercase;
+  }
 
-.subscribe-section__button-submit:hover {
-  background-color: transparent;
-  border: 1px solid $light-grey-color;
-}
+  &__button-submit:hover {
+    background-color: transparent;
+    border: 1px solid $light-grey-color;
+  }
 
-.subscribe-section__button-submit:active {
-  background-color: white;
-  color: $light-grey-color;
+  &__button-submit:active {
+    background-color: white;
+    color: $light-grey-color;
+  }
 }

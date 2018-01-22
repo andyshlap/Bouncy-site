@@ -1,19 +1,22 @@
 
-.portfolio-section {background-color: $almost-white-color;}
+.portfolio-section {
+  background-color: $almost-white-color;
 
-.portfolio-section__menu {
-  -webkit-padding-start: 0;
-  text-align: center;
+  &__menu {
+    -webkit-padding-start: 0;
+    text-align: center;
+  }
 }
 
 .menu__item {
   display: inline;
   margin-left: 15px;
+
+  &:first-child {margin-left: 0;}
+
+  &-active {border-bottom: 2px solid $green-color;}
 }
 
-.menu__item:first-child {margin-left: 0;}
-
-.menu__item-active {border-bottom: 2px solid $green-color;}
 
 .portfolio-section__gallery {
   height: 950px;

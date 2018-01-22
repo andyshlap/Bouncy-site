@@ -2,48 +2,51 @@
 .blog-section {
   background-image: url('../images/blog__bg.png');
   background-size: cover;
-}
 
-.blog-section__heading {
-  color: white;
-  text-align: left;
-}
+  &__heading {
+    color: white;
+    text-align: left;
 
-.blog-section__heading__follower {
-  color: #b2b3b3;
-  display: inline-block;
-  font-size: 70%;
-  text-align: left;
-  width: 475px;
+    &__follower {
+      color: #b2b3b3;
+      display: inline-block;
+      font-size: 70%;
+      text-align: left;
+      width: 475px;
+    }
+  }
+
 }
 
 .blog__news-item {
   margin-left: 170px;
 
-	.news-item__header {
-    color: white; 
-    font-size: 100%;
-    margin-bottom: 15px;
-	}
+	.news-item{
+    & __header {
+      color: white; 
+      font-size: 100%;
+      margin-bottom: 15px;
+    }
 
-	.news-item__author {
-    font-size: 70%;
-    font-style: italic;
-    margin-bottom: 20px;
-	}
+    &__author {
+      font-size: 70%;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
 
-	.news-item__likes {
-    font-size: 70%;
-	}
+    &__likes {
+      font-size: 70%;
+    }
 
-	.news-item__article {
-    margin-bottom: 60px;
-    margin-top: 60px;
-	}
+    &__article {
+     margin-bottom: 60px;
+      margin-top: 60px;
+   }
 
-	.news-item__button {
-    border: 0;
-    color: #b2b3b3;
-    padding: 0;
-	}
+    &__button {
+      border: 0;
+      color: #b2b3b3;
+      padding: 0;
+    }
+  }
 }

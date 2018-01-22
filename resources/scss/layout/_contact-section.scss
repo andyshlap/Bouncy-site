@@ -1,48 +1,50 @@
 
- .contact-section {
+.contact-section {
   background-color: $almost-white-color;
- }
-
-.details__col {
-  background-color: white;
-  float: left;
-  margin-left: 5%;
-  text-align: center;
-  width: 30%;
 }
 
-.details__picture {
-  background-position:center;
-  background-size: cover;
-  height: 145px;
-}
+.details {
+  &__col {
+    background-color: white;
+    float: left;
+    margin-left: 5%;
+    text-align: center;
+    width: 30%;
+  }
 
-.details__email-picture {background-image: url('../images/contact-section__email.png');}
+  &__picture {
+    background-position: center;
+    background-size: cover;
+    height: 145px;
+  }
 
-.details__map-picture {background-image: url('../images/contact-section__map.png');}
+  &__email-picture {background-image: url('../images/contact-section__email.png');}
 
-.details__phone-picture {background-image: url('../images/contact-section__phone.png');}
+  &__map-picture {background-image: url('../images/contact-section__map.png');}
 
-.details__col:first-child {margin-left: 0;}
+  &__phone-picture {background-image: url('../images/contact-section__phone.png');}
 
-.details__icon {
-  color: white;
-  font-size: 250%;
-  margin-top: 45px;
-}
+  &__col:first-child {margin-left: 0;}
 
-.details__h4 {
-  color: #464646;
-  margin: 30px 0 25px;
-}
+  &__icon {
+    color: white;
+    font-size: 250%;
+    margin-top: 45px;
+  }
 
-.details__h4__follower { 
-  color: $light-grey-color;
-  font-size: 70%;
-  letter-spacing: 1px;
-  line-height: 20px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
+  &__h4 {
+    color: #464646;
+    margin: 30px 0 25px;
+
+    &__follower { 
+      color: $light-grey-color;
+      font-size: 70%;
+      letter-spacing: 1px;
+      line-height: 20px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+  }
 }
 
 @media only screen and (max-width: 740px) {

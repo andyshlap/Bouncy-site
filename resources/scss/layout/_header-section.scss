@@ -38,7 +38,7 @@
   &__scroll {
     background-color: $green-color;
     border-radius: 50%;
-    bottom: 1%;
+    bottom: 2%;
     color: white;
     height: 40px;
     left: 50%;
@@ -87,5 +87,5 @@
 .scroll__icon {font-size: 40px;}
 
 @media only screen and (max-width: 920px){
-  .header { padding: 25px 1%;}
+ 
 }

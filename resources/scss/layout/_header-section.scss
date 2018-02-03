@@ -89,7 +89,7 @@
 
 /* sticky top */
 
-.stickytop {
+.sticky {
   background-color: $green-color;
   box-sizing: border-box;
   position: fixed;
@@ -109,6 +109,6 @@
 
 .scroll__icon {font-size: 40px;}
 
-@media only screen and (max-width: 920px){
- 
+@media only screen and (max-width: 800px){
+  
 }

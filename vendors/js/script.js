@@ -39,6 +39,7 @@ $(document).ready(function() {
 			    });
 		    }
 		}
+	
 		});
 
 
@@ -55,19 +56,55 @@ $(document).ready(function() {
 	});
 
 
-/* sticky-top
+/* sticky-nav
 	=========================================================================================*/
-	$(window).scroll(function() {
-		if($(this).scrollTop() >= 100) {
-		  $('.header__nav-bar').addClass('stickytop');
-		  $('.header__logo').addClass('logo-hover');
-		  $('.nav__item').addClass('nav__item-hover');
+	$('.js--about-section').waypoint(function(direction) {
+		if (direction == "down") {
+			$('.header__nav-bar').addClass('sticky');
 		} else {
-			$('.header__nav-bar').removeClass('stickytop');
-			$('.header__logo').removeClass('logo-hover');
-			$('.nav__item').removeClass('nav__item-hover');
-		} 
+			$('.header__nav-bar').removeClass('sticky');
+		}
+	}, {
+		offset: '60px;'
 	});
+
+	/* animations of scroll
+ 	=========================================================================================*/
+
+  $('.js--wp-1').waypoint(function(direction) {
+  	$('.js--wp-1').addClass('animated bounceInUp');
+  }, {
+  	offset: '50%'
+  })
+
+  $('.js--wp-2').waypoint(function(direction) {
+  	$('.js--wp-2').addClass('animated flipInX');
+	}, {
+	  offset: '50%'
+  })
+
+  $('.js--wp-3').waypoint(function(direction) {
+    $('.js--wp-3').addClass('animated jackInTheBox');
+  }, {
+    offset: '75%'
+  })
+
+   $('.js--wp-4').waypoint(function(direction) {
+    $('.js--wp-4').addClass('animated bounceInRight');
+  }, {
+    offset: '50%'
+  })
+
+    $('.js--wp-5').waypoint(function(direction) {
+    $('.js--wp-5').addClass('animated pulse');
+  }, {
+    offset: '50%'
+  })
+
+
+
+
+	
 	
 });
 

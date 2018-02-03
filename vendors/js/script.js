@@ -53,6 +53,21 @@ $(document).ready(function() {
 		autoplay: true,
 		arrows: false,
 	});
+
+
+/* sticky-top
+	=========================================================================================*/
+	$(window).scroll(function() {
+		if($(this).scrollTop() >= 100) {
+		  $('.header__nav-bar').addClass('stickytop');
+		  $('.header__logo').addClass('logo-hover');
+		  $('.nav__item').addClass('nav__item-hover');
+		} else {
+			$('.header__nav-bar').removeClass('stickytop');
+			$('.header__logo').removeClass('logo-hover');
+			$('.nav__item').removeClass('nav__item-hover');
+		} 
+	});
 	
 });
 

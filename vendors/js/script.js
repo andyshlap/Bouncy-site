@@ -61,8 +61,12 @@ $(document).ready(function() {
 	$('.js--about-section').waypoint(function(direction) {
 		if (direction == "down") {
 			$('.header__nav-bar').addClass('sticky');
+      $('.logo').addClass('logo-hover');
+      $('.nav__item').addClass('nav__item-hover');
 		} else {
 			$('.header__nav-bar').removeClass('sticky');
+      $('.logo').removeClass('logo-hover');
+       $('.nav__item').removeClass('nav__item-hover');
 		}
 	}, {
 		offset: '60px;'

@@ -1,22 +1,7 @@
 
 .portfolio-section {
   background-color: $almost-white-color;
-
-  &__menu {
-    -webkit-padding-start: 0;
-    text-align: center;
-  }
 }
-
-.menu__item {
-  display: inline;
-  margin-left: 15px;
-
-  &:first-child {margin-left: 0;}
-
-  &-active {border-bottom: 2px solid $green-color;}
-}
-
 
 .portfolio-section__gallery {
   height: 950px;

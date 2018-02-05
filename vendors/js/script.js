@@ -122,7 +122,82 @@ $(document).ready(function() {
   })
 
 
-	
-	
+	/* details-section  switcher*/
+
+	var icon1 = $('.pe-7s-like');
+	var icon2 = $('.pe-7s-mouse');
+	var icon3 = $('.pe-7s-light');
+
+	icon1.click(function() {
+		
+		if(!icon1.hasClass('js--icon-active')) {
+	  		icon1.addClass('js--icon-active');
+
+	  		if( icon2.hasClass('js--icon-active')){
+	  			icon2.removeClass('js--icon-active');
+	  		} else if (icon3.hasClass('js--icon-active')) {
+	  			icon3.removeClass('js--icon-active');
+	  		}
+
+			$('.js--about-with-love').removeClass('js--details-nodisplay');
+			$('.js--about-with-love').addClass('js--details-display');
+
+			if( $('.js--about-clean').hasClass('js--details-display')) {
+					$('.js--about-clean').removeClass('js--details-display');
+					$('.js--about-clean').addClass('js--details-nodisplay');
+			} else if ($('.js--about-creative').hasClass('js--details-display')) {
+				$('.js--about-creative').removeClass('js--details-display');
+				$('.js--about-creative').addClass('js--details-nodisplay');
+			}
+  		} 
+ 	})
+ 	
+ 	icon2.click(function() {
+		
+		if(!icon2.hasClass('js--icon-active')) {
+	  		icon2.addClass('js--icon-active');
+
+	  		if( icon3.hasClass('js--icon-active')){
+	  			icon3.removeClass('js--icon-active');
+	  		} else if (icon1.hasClass('js--icon-active')) {
+	  			icon1.removeClass('js--icon-active');
+	  		}
+
+			$('.js--about-clean').removeClass('js--details-nodisplay');
+			$('.js--about-clean').addClass('js--details-display');
+
+			if( $('.js--about-with-love').hasClass('js--details-display')) {
+					$('.js--about-with-love').removeClass('js--details-display');
+					$('.js--about-with-love').addClass('js--details-nodisplay');
+			} else if ($('.js--about-creative').hasClass('js--details-display')) {
+				$('.js--about-creative').removeClass('js--details-display');
+				$('.js--about-creative').addClass('js--details-nodisplay');
+			}
+  		} 
+ 	})
+
+ 	icon3.click(function() {
+		
+		if(!icon3.hasClass('js--icon-active')) {
+	  		icon3.addClass('js--icon-active');
+
+	  		if( icon2.hasClass('js--icon-active')){
+	  			icon2.removeClass('js--icon-active');
+	  		} else if (icon1.hasClass('js--icon-active')) {
+	  			icon1.removeClass('js--icon-active');
+	  		}
+
+			$('.js--about-creative').removeClass('js--details-nodisplay');
+			$('.js--about-creative').addClass('js--details-display');
+
+			if( $('.js--about-clean').hasClass('js--details-display')) {
+					$('.js--about-clean').removeClass('js--details-display');
+					$('.js--about-clean').addClass('js--details-nodisplay');
+			} else if ($('.js--about-creative').hasClass('js--details-display')) {
+				$('.js--about-with-love').removeClass('js--details-display');
+				$('.js--about-with-love').addClass('js--details-nodisplay');
+			}
+  		} 
+ 	})
 });
 

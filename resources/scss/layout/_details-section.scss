@@ -13,6 +13,7 @@
     margin-left: 30px;
     padding-top: 15px;
     width: 70px;
+    cursor: pointer;
   }
 
   &__h4 {margin-bottom: 30px;}
@@ -31,6 +32,23 @@
 }
 
 .pe-7s-like {
-  background-color: $green-color;
   margin-left: 0;
+}
+
+.js--icon-active {
+  background-color: $green-color;
+}
+
+
+  /* switching */
+
+
+
+
+.js--details-display {
+  display: block;
+}
+
+.js--details-nodisplay {
+  display: none;
 }
